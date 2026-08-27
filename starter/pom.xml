@@ -22,6 +22,11 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
             <version>3.2.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>3.2.5</version>
+        </dependency>
         <!-- VULNERABILITY (A03: Software Supply Chain Failures) -> Fixed -->
         <!-- FIX (A03): upgrade log4j-core past the versions affected by Log4Shell
      (CVE-2021-44228)  -->
