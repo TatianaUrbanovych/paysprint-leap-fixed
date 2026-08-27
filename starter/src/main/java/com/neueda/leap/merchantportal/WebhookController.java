@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.util.HexFormat;
 
-// Nathan working on this file
+// Nathan working on this file (fixed the webhook security issue)
 // fixed the security issue - before anyone could hit this endpoint, now we check it's actually from our payment provider
 
 @RestController
@@ -56,4 +56,5 @@ public class WebhookController {
                 expected.getBytes(StandardCharsets.UTF_8),
                 signature.getBytes(StandardCharsets.UTF_8));
     }
+
 }
