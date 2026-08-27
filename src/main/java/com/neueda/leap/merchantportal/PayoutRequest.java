@@ -16,12 +16,35 @@ public class PayoutRequest {
         this.approvalStatus = "PENDING";
     }
 
-    public Long getId() { return id; }
-    public Long getMerchantId() { return merchantId; }
-    public Long getRequestedByUserId() { return requestedByUserId; }
-    public String getApprovalStatus() { return approvalStatus; }
-    public void setApprovalStatus(String s) { this.approvalStatus = s; }
-    public Long getApprovedByUserId() { return approvedByUserId; }
-    public void setApprovedByUserId(Long id) { this.approvedByUserId = id; }
-    public double getAmount() { return amount; }
+    public Long getId() {
+        return id;
+    }
+
+    public Long getMerchantId() {
+        return merchantId;
+    }
+
+    public Long getRequestedByUserId() {
+        return requestedByUserId;
+    }
+
+    public String getApprovalStatus() {
+        return approvalStatus;
+    }
+
+    public void setApprovalStatus(String s) {
+        this.approvalStatus = s;
+    }
+
+    public Long getApprovedByUserId() {
+        return approvedByUserId;
+    }
+
+    public void setApprovedByUserId(Long id) {
+        this.approvedByUserId = id;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
 }
