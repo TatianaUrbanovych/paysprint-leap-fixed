@@ -14,11 +14,11 @@ public class BatchPayoutJob {
         this.payoutRepository = payoutRepository;
     }
 
-    // FIX (A10): a failed transfer is marked FAILED, not PAID, and the batch
-    // continues to the next merchant rather than silently misreporting this
-    // one. A separate, idempotent retry process can safely re-attempt only
-    // the FAILED payouts later, because their real status is now recorded
-    // accurately instead of masked.
+    // FIX (A10: Mishandling of Exceptional Conditions): a failed transfer is marked
+    // FAILED, not PAID, and the batch
+    // continues to the next merchant instead of ignoring a fail and falsely
+    // reporting success. Failed transfers can be retries later without affecting
+    // the rest of the batch, since they are correctly marked as FAILED now.
     public void runNightlyBatch(List<PayoutRequest> approvedPayouts) {
         for (PayoutRequest payout : approvedPayouts) {
             try {
