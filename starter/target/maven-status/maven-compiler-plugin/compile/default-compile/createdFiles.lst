@@ -1,13 +1,10 @@
 com/neueda/leap/merchantportal/PayoutRequest.class
-com/neueda/leap/merchantportal/BankTransferException.class
-com/neueda/leap/merchantportal/PermanentBankTransferException.class
-com/neueda/leap/merchantportal/PayoutApprovalService.class
-com/neueda/leap/merchantportal/BankTransferClient.class
-com/neueda/leap/merchantportal/TransientBankTransferException.class
 com/neueda/leap/merchantportal/PaymentStatusEvent.class
 com/neueda/leap/merchantportal/WebhookController.class
 com/neueda/leap/merchantportal/PayoutStatusUpdater.class
-com/neueda/leap/merchantportal/CurrentMerchantProvider.class
+com/neueda/leap/merchantportal/BankTransferException.class
+com/neueda/leap/merchantportal/PayoutApprovalService.class
 com/neueda/leap/merchantportal/PayoutRepository.class
+com/neueda/leap/merchantportal/BankTransferClient.class
 com/neueda/leap/merchantportal/BatchPayoutJob.class
 com/neueda/leap/merchantportal/MerchantController.class
